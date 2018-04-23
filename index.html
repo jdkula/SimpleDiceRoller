@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Dice Roller</title>
+    <script type="application/javascript" src="jquery-3.3.1.js"></script>
+    <script type="application/javascript" src="main.js"></script>
+</head>
+<body>
+<form id="diceroller" method="post" action="none">
+    <input type="text" placeholder="N" aria-label="Number of Dice" id="n" value="1" onkeypress="return isNumber(event)" />
+    d
+    <input type="text" placeholder="S" aria-label="Number of Sides" id="s" value="20" onkeypress="return isNumber(event)"/>
+    <input type="submit" value="Roll!" id="rollbutton" aria-label="Roll button"/>
+</form>
+<br>
+<div aria-live="assertive" id="output">
+    Dice output here!
+</div>
+</body>
+</html>
